@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Latest past events</title>
 </head>
 <body>
     <header>
-        <div>
-            <div>
+        <div class="container">
+            <div id="container__brand">
                 <h1>MIA EVENTS</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="events.html">EVENTS</a></li>
+            </div >
+            <nav class="navigation">
+                <ul class="navigtion__list">
+                    <li class="navigation__list--link"><a class="navigation__list--main" href="index.html">HOME</a></li>
+                    <li class="navigation__list--link"><a class="navigation__list--main" href="about.html">ABOUT</a></li>
+                    <li class="navigation__list--link"><a class="navigation__list--main" href="services.html">SERVICES</a></li>
+                    <li class="navigation__list--link"><a class="navigation__list--main" href="contact.html">CONTACT</a></li>
+                    <li class="navigation__list--link"><a class="navigation__list--main" href="events.html">EVENTS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
-        <div>
+    <section id="news">
+        <div class="container">
             <h1>Subscribe to our newsletter</h1> 
             <div>
              <form>
@@ -36,64 +37,78 @@
          </div>
     </section>
     <section>
-        <div>
+        <div class="big-h1">
             <h1>Latest past events</h1>
-            <h2>Self development conference</h2>
-            <img src="images/speech.jpg" alt="a person making speech">
-            <p>Self-development events are a great opportunity to find new ways of doing things differently or you can come up with entirely new ideas for your personal and professional growth.
-               Being in an environment of inspirational people who are experts in their fields is awesome and highly motivating. The picture on the right is of an event we organized to work on self-development. 
-               A lot of professionals made a speech. Click play to listen</p>
-            <audio controls> 
-                <source src="audios/self development.mp3" type="audio/mp3">
-            </audio>
-            <details>
-                <summary>speech</summary>
-                 I want to get inside of your head just for a few moments today, and I want to talk to you about the idea of something very precious and special to all of us.
-            </details>
+        </div>
+        <div class="tabs">
+            <div class="tabs__right">
+                <div><img src="images/speech.jpg" alt="a person making speech"></div>
+                <div>
+                    <h2>Self development conference</h2>
+                    <p>Self-development events are a great opportunity to find new ways of doing things differently or you can come up with entirely new ideas for your personal and professional growth.
+                    Being in an environment of inspirational people who are experts in their fields is awesome and highly motivating. The picture on the right is of an event we organized to work on self-development. 
+                    A lot of professionals made a speech. Click play to listen</p>
+                    <audio class="right__description" controls> 
+                        <source src="audios/self development.mp3" type="audio/mp3">
+                    </audio>
+                    <details  class="right__description" >
+                        <summary>speech</summary>
+                       I want to get inside of your head just for a few moments today, and I want to talk to you about the idea of something very precious and special to all of us.
+                    </details>
+                </div>
+            </div>
+            </div>
         </div>
         <div>
             <h2>Music fest 2022</h2>
-            <video height=400px controls autoplay >
+            <video class="video-container" height=400px controls autoplay >
                 <source src="videos/music fest vid.mp4" type="video/mp4">
                 <track kind="captions" src="captions/events.vtt" srclang="en" label="English">
             </video>
-            <details>
+            <details  class="description">
                 <summary>audio description</summary>
                 <audio src="audios/events audio description.mp3" controls></audio>
             </details>
-            <p>This was a three day music festival famously known for “peace and music” it happened August 15 to August 18, 2022. It was held at a 600 acre farm Bethel, Addis Ababa. 
+            <p class="short-p">This was a three day music festival famously known for “peace and music” it happened August 15 to August 18, 2022. It was held at a 600 acre farm Bethel, Addis Ababa. 
                The festival drew 400 plus young people</p>
         </div>
-        <div>
-            <img src="images/culture.jpg" alt="people wearing cultural clothes singing">
-            <h2>Culture fest 2022</h2>
-            <p>The festival showcased artistic and cultural values of the East African people. 
-                Spokesperson of the Ministry of Foreign Affairs, Ambassador Dina Mufti said the festival played a significant role in promoting social, economic and political integration among the East African peoples.
-                The festival was held for six consecutive days exhibiting indigenous manufacturing products, traditional cuisines and medicines, artistic pictures and sculptures, including languages and cultural symposium and book fairs. 
-                The Ethiopian National Theatre, Entoto Park and Mesqel square hosted the various programs.</p>
+        <div class="tabs">
+            <div class="tabs__right">
+                <div><img src="images/culture.jpg" alt="people wearing cultural clothes singing"></div>
+                <div>
+                    <h2>Culture fest 2022</h2>
+                    <p>The festival showcased artistic and cultural values of the East African people. 
+                    Spokesperson of the Ministry of Foreign Affairs, Ambassador Dina Mufti said the festival played a significant role in promoting social, economic and political integration among the East African peoples.
+                    The festival was held for six consecutive days exhibiting indigenous manufacturing products, traditional cuisines and medicines, artistic pictures and sculptures, including languages and cultural symposium and book fairs. 
+                    The Ethiopian National Theatre, Entoto Park and Mesqel square hosted the various programs.</p></div>
+            </div>
         </div>
     </section>
-    <footer>
-        <div>
-            <ul>
-                <li><h2>Follow us on</h2></li>
-                <li><a href="#"><img src="images/facebook.jpg" alt="the logo of facebook">Facebook</a></li>
-                <li><a href="#"><img src="images/instagram.jpg" alt="the logo of instagram"> Instagram</a></li>
-                <li><a href="#"><img src="images/telegram.png" alt="the logo of telegram"> Telegram</a></li>
-                <li><a href="#"><img src="images/twitter.jpg" alt="the logo of twitter">Twitter</a></li>
+    <hr>
+    <footer class="footer">
+        <div class="footer__cols">
+            <ul class="footer__cols--socials">
+                <h2>Follow us on</h2>
+                    <li><a href="#"><img src="images/facebook.jpg" alt="the logo of facebook"></a></li>
+                    <li><a href="#"><img src="images/instagram.jpg" alt="the logo of instagram"></a></li>
+                    <li><a href="#"><img src="images/telegram.png" alt="the logo of telegram"></a></li>
+                    <li><a href="#"><img src="images/twitter.jpg" alt="the logo of twitter"></a></li>
             </ul>
-            <ul>
-                <li><h2>Contact us</h2></li>
-                <li><a href="#"><p><img src="images/email.png" alt="email logo">miaevents2022@gmail.com</p></a></li>
+            <ul class="footer__cols__contact">
+                <h2>Contact us</h2>
+                    <li><a class="footer__cols__contact--link" href="#"><p><img src="images/email.png" alt="email logo">miaevents2022@gmail.com</p></a></li>
             </ul>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Privacy</a></li>
+            <ul  class="footer__cols__info">
+                <li class="footer__cols__info--link"><a href="#">FAQ</a></li>
+                <li class="footer__cols__info--link"><a href="#">Terms of use</a></li>
+                <li class="footer__cols__info--link"><a href="#">Jobs</a></li>
+                <li class="footer__cols__info--link"><a href="#">Privacy</a></li>
             </ul>
-        </div>
-        <p>Mia Events &copy; 2022</p>
-    </footer>
+        </footer>
+
+        <div class="copy">
+            <p>Mia Events &copy; 2022</p>
+       </div>
+       
 </body>
 </html>
