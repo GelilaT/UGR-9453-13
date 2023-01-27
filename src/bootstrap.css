@@ -1,0 +1,24 @@
+.big-h1{
+    font-size: 100px;
+}
+.big-h2{
+    font-size: 70px;
+}
+@media(max-width:900px) {
+    .big-h1{
+        font-size: 60px;
+        color: white;
+    }
+    .big-h2{
+        font-size: 50px;
+    }
+}
+@media(max-width:400){
+    .big-h1{
+        font-size: 40px;
+        color: white;
+    }
+    .big-h2{
+        font-size: 20px;
+    }
+}
